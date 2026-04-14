@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun, Moon, BookOpen, Github } from 'lucide-react';
+import { Sun, Moon, BookOpen } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 export default function Header() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, RotateCcw, Lightbulb, ChevronDown, ChevronUp, AlertCircle, Save, Upload, BookOpen } from 'lucide-react';
+import { Play, RotateCcw, Lightbulb, ChevronDown, ChevronUp, AlertCircle, Save, BookOpen } from 'lucide-react';
 import { EXAMPLE_GRAMMARS } from '../utils/examples';
 
 export default function InputPanel({ onSimplify, onReset, isSimplified, error, text, onTextChange }) {
@@ -25,14 +25,7 @@ export default function InputPanel({ onSimplify, onReset, isSimplified, error, t
     URL.revokeObjectURL(url);
   };
 
-  const handleLoad = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => onTextChange(ev.target.result);
-    reader.readAsText(file);
-    e.target.value = '';
-  };
+
 
   const insertText = (insertStr) => {
     const textarea = document.getElementById('grammar-input');

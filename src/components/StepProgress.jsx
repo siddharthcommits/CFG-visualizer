@@ -1,6 +1,5 @@
 import React from 'react';
 import { CheckCircle2, Circle, ArrowRight, Trash2, Sigma, Link, Zap } from 'lucide-react';
-import { EPSILON } from '../utils/cfgParser';
 
 const STEP_META = {
   original:  { icon: Sigma,    color: 'text-gray-500',    bg: 'bg-gray-100 dark:bg-gray-800',             ring: 'ring-gray-300 dark:ring-gray-600' },

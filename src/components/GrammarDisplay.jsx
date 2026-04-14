@@ -89,7 +89,6 @@ function ProductionRule({ nt, rules, prevRules, isRemoved, isModified, isAdded, 
             const ruleStr = rule.join(' ');
             const wasPresent = prevRules?.some(r => r.join(' ') === ruleStr);
             const isNewRule = prevRules && !wasPresent && !isRemoved;
-            const isRemovedRule = !rules.some(r => r.join(' ') === ruleStr) && prevRules?.some(r => r.join('') === rule.join(''));
 
             return (
               <React.Fragment key={i}>

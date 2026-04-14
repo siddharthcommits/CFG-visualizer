@@ -15,7 +15,6 @@ export default function VisualizationPanel({ steps, activeStep, onStepChange }) 
   const latestStepRef = useRef(null);
 
   const step = steps[activeStep];
-  const prevStep = activeStep > 0 ? steps[activeStep - 1] : null;
 
   const goNext = useCallback(() => {
     onStepChange(prev => {
