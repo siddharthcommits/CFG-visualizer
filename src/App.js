@@ -164,7 +164,7 @@ function AppContent() {
       {/* Footer */}
       <footer className="border-t border-gray-200 dark:border-gray-800 py-4 px-6 text-center">
         <p className="text-xs text-gray-400 dark:text-gray-600">
-          CFG Simplifier · An educational tool for Theory of Computation · Built with React & Tailwind CSS
+          CFG Simplifier : An educational tool for Theory of Computation.
         </p>
       </footer>
     </div>

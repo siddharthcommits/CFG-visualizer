@@ -26,7 +26,9 @@ export default function Header() {
         {/* Center badge */}
         <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-900/30 border border-primary-200 dark:border-primary-800">
           <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
-          <span className="text-xs font-semibold text-primary-700 dark:text-primary-300">Educational Tool · Theory of Computation</span>
+          <span className="text-xs font-semibold text-primary-700 dark:text-primary-300">
+            <a href="https://www.geeksforgeeks.org/theory-of-computation/what-is-context-free-grammar/">Learn more about CFG</a>
+          </span>
         </div>
 
         {/* Actions */}

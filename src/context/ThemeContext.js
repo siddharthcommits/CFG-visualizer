@@ -5,8 +5,11 @@ const ThemeContext = createContext();
 export function ThemeProvider({ children }) {
   const [dark, setDark] = useState(() => {
     const saved = localStorage.getItem('cfg-theme');
+    // If the user manually saved a preference before, respect it
     if (saved) return saved === 'dark';
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Otherwise, force light mode as the default behavior
+    return false;
   });
 
   useEffect(() => {
